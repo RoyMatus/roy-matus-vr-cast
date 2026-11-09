@@ -1,0 +1,12 @@
+{
+  "name": "roy-matus-vr-cast",
+  "version": "0.4.2",
+  "private": true,
+  "description": "Quest stock Cast receiver for the tested LG webOS 2 TV",
+  "scripts": {
+    "test": "node tests/cast-stream.cjs && node tests/h264-size.cjs && node tests/ipk.cjs",
+    "prepare-install": "node tools/prepare-install.cjs",
+    "package": "node tools/package.cjs"
+  },
+  "devDependencies": {"@webos-tools/cli": "3.2.6"}
+}

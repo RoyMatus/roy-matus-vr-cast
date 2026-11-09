@@ -1,0 +1,11 @@
+{
+  "id": "local.quest.receiver",
+  "version": "0.4.2",
+  "vendor": "Roy Matus",
+  "type": "web",
+  "main": "index.html",
+  "title": "Roy Matus VR Cast",
+  "icon": "icon.png",
+  "resolution": "1280x720",
+  "bgColor": "#111927"
+}

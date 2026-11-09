@@ -1,0 +1,8 @@
+node_modules/
+.build/
+local-install/
+service/private/
+player-app/roy-player
+player-app/libroyopus.so
+*.log
+__pycache__/

@@ -1,0 +1,44 @@
+/* Settings-style UI for 2015 LG webOS, using old-WebKit-compatible CSS. */
+html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#315477;color:#4b4b48;font:24px Arial,sans-serif}
+button{font:inherit;cursor:pointer;-webkit-appearance:none;outline:none}
+.settings-shell{position:absolute;left:24px;right:88px;top:20px;bottom:20px;background:#f2f1ed;border:1px solid #d4d3cf}
+nav{position:absolute;left:0;top:0;bottom:0;width:174px;background:#e8e7e3;padding-top:30px;box-sizing:border-box}
+.nav-item{display:block;width:100%;height:146px;margin:0;padding:0;border:0;background:transparent;color:#62625e;font-size:19px;text-align:center}
+.nav-item>span:last-child{display:block;margin-top:9px}
+.nav-circle{display:block;width:70px;height:70px;line-height:70px;margin:auto;border-radius:50%;background:#f6f5f0;border:3px solid transparent;box-sizing:border-box}
+.nav-circle svg{width:42px;height:42px;vertical-align:middle;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.nav-item.active .nav-circle{border-color:#c50060;color:#b90059}
+.nav-item.active{color:#444440}
+.nav-item:focus .nav-circle{background:#c50060;color:white;border-color:#c50060}
+main{position:absolute;left:208px;right:34px;top:22px;bottom:24px}
+header{height:106px;border-top:2px solid #777773;border-bottom:2px solid #777773;box-sizing:border-box}
+h1{font-size:46px;font-weight:normal;letter-spacing:-1.3px;margin:13px 0 4px;color:#43433f}
+#section-title{font-size:20px;color:#666660}
+.page{padding:26px 10px 0;position:relative;box-sizing:border-box}
+h2{font-size:28px;font-weight:normal;margin:0 0 12px;color:#4c4c46}
+p{margin:12px 0;line-height:1.45}
+.description{font-size:22px;color:#73736c;max-width:790px}
+.info-row{display:table;width:100%;padding:12px 0;border-bottom:1px solid #deded7;box-sizing:border-box;font-size:22px}
+.info-row>span{display:table-cell;width:54%}
+.info-row>span:last-child{text-align:right;color:#686861;width:46%}
+.actions{margin-top:24px;white-space:nowrap}
+.primary,.secondary{font-size:19px;border:0;border-radius:28px;padding:13px 25px;height:48px;font-weight:bold;letter-spacing:0.1px}
+.primary{background:#ce0066;color:white;margin-right:12px}
+.primary:focus{background:#a60052;box-shadow:0 0 0 3px #f2f1ed,0 0 0 5px #c50060}
+.secondary{background:#deded7;color:#62625a}
+.secondary:focus{background:#c50060;color:white}
+.hint{font-size:18px;color:#88887e}
+.text-button{font-size:17px;border:0;background:transparent;color:#77776f;padding:8px 0;text-align:left}
+.text-button:focus{color:#c50060;text-decoration:underline}
+.diagnostics{font-size:16px;line-height:1.35;white-space:pre-line;max-height:78px;overflow:auto;color:#77776d;border-top:1px solid #d5d5cd;padding-top:7px}
+.audio-list{margin:25px 0 24px}
+.audio-choice{display:block;background:transparent;border:0;border-bottom:1px solid #deded7;width:100%;text-align:left;padding:17px 18px;color:#606059;font-size:26px;height:72px;border-radius:4px}
+.audio-choice:focus{background:#e8e5df;box-shadow:inset 0 0 0 2px #c50060}
+.radio-mark{display:inline-block;width:25px;height:25px;border:2px solid #a6a69c;border-radius:50%;margin-right:21px;vertical-align:-4px;box-sizing:border-box;background:#faf9f5}
+.audio-choice.selected .radio-mark{border:7px solid #c50060}
+.audio-choice.selected{color:#4b4b45}
+#audio-note{min-height:64px;margin-top:23px}
+.about-text{margin-top:28px}
+.back-button{position:absolute;right:13px;top:29px;width:61px;height:61px;border:0;border-radius:50%;background:#f4f3ed;color:#62625e;padding:13px}
+.back-button svg{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;width:100%;height:100%}
+.back-button:focus{background:#c50060;color:white}

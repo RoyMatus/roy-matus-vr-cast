@@ -1,0 +1,10 @@
+{
+  "id": "local.quest.receiver.player",
+  "version": "0.2.2",
+  "vendor": "Roy Matus",
+  "type": "native",
+  "main": "roy-player",
+  "title": "Roy Matus VR Cast Player",
+  "icon": "icon.png",
+  "resolution": "1280x720"
+}

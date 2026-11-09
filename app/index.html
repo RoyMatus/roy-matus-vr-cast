@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Roy Matus VR Cast</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="settings-shell">
+<nav aria-label="Разделы приложения">
+<button class="nav-item active" id="nav-connection"><span class="nav-circle"><svg viewBox="0 0 48 48"><rect x="8" y="10" width="32" height="23" rx="2"/><path d="M18 40h12M24 33v7M16 21h16m-6-6 6 6-6 6"/></svg></span><span>Подключение</span></button>
+<button class="nav-item" id="nav-audio"><span class="nav-circle"><svg viewBox="0 0 48 48"><path d="M9 19h8l10-8v26l-10-8H9zM33 17q9 7 0 14M37 11q15 13 0 26"/></svg></span><span>Звук</span></button>
+<button class="nav-item" id="nav-about"><span class="nav-circle"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><path d="M24 22v12M24 14v2"/></svg></span><span>О приложении</span></button>
+</nav><main>
+<header><h1>Roy Matus VR Cast</h1><div id="section-title">Подключение /</div></header>
+<section class="page" id="page-connection">
+<h2 id="status">Запускаем приёмник…</h2>
+<p class="description">В Quest откройте «Камера» → «Трансляция», выберите <b>Roy Matus VR Cast</b> и нажмите «Далее».</p>
+<div class="info-row"><span>Телевизор</span><span>LG 42LF653V</span></div>
+<div class="info-row"><span>Шлем</span><span>Meta Quest 3S</span></div>
+<div class="info-row"><span>Имя в списке трансляции</span><span>Roy Matus VR Cast</span></div>
+<div class="actions"><button class="primary" id="restart">ПЕРЕЗАПУСТИТЬ</button><button class="secondary" id="stop">ОСТАНОВИТЬ</button></div>
+<p class="hint">Телевизор и Quest должны быть в одной сети. В шлем ничего устанавливать не нужно. Кнопка «Назад» на пульте вернёт настройки.</p>
+<button class="text-button" id="details" aria-expanded="false">СОСТОЯНИЕ СОЕДИНЕНИЯ</button>
+<div id="events" class="diagnostics" style="display:none"></div>
+</section>
+<section class="page" id="page-audio" style="display:none">
+<h2>Где воспроизводить звук</h2>
+<div class="audio-list" role="group" aria-label="Режим звука">
+<button class="audio-choice" id="audio-headset" aria-pressed="true"><span class="radio-mark"></span><span>В шлеме</span></button>
+<button class="audio-choice" id="audio-tv" aria-pressed="false"><span class="radio-mark"></span><span>На телевизоре</span></button>
+<button class="audio-choice" id="audio-both" aria-pressed="false"><span class="radio-mark"></span><span>В шлеме и на телевизоре</span></button>
+</div><p id="audio-note" class="description"></p><p id="saved-note" class="hint">Выбор сохраняется между запусками.</p>
+</section>
+<section class="page" id="page-about" style="display:none">
+<h2>Roy Matus VR Cast</h2>
+<div class="info-row"><span>Автор</span><span>Roy Matus</span></div>
+<div class="info-row"><span>Версия приложения</span><span>0.4.2 · тестовая</span></div>
+<div class="info-row"><span>Установлено на</span><span>телевизоре LG</span></div>
+<p class="description about-text">Приём обычной трансляции Quest: видео, звук и прозрачность, если её передаёт шлем. Качество регулирует отправитель по состоянию сети; предел — Full HD.</p>
+<p class="hint">Используется экспериментальный сертификат совместимости. Его отзыв может потребовать обновления приёмника.</p>
+<p class="hint">Проверено 9 ноября 2026 года.</p>
+</section></main></div>
+<button id="back" class="back-button" aria-label="Назад"><svg viewBox="0 0 48 48"><path d="M21 12 10 23l11 11M11 23h20q9 0 9 9t-9 9"/></svg></button>
+<script src="webOSTV.js"></script><script src="app.js"></script></body></html>

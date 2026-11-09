@@ -1,0 +1,6 @@
+{
+  "name": "local.quest.receiver.service",
+  "version": "0.4.2",
+  "description": "Roy Matus VR Cast compatibility prototype for LG webOS 2",
+  "main": "service.js"
+}
